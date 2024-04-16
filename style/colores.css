@@ -1,0 +1,96 @@
+:root {
+    --color--main:#ff6600;
+    --color--main-dark:#FF9D5C;
+    
+    /*Colores principal*/
+    --color--principal-rojo-oscuro: #DB3C0B;
+    --color--principal--rojo:#E63F0C;
+    --color--principal--rojo-claro: #f25106;
+    --color--principal--naranja-claro: #FF7E06;
+    --color--principal-amarillo: #FF980D;
+
+    /*colores acento*/
+    --color--acento--100: #03838A;
+    --color--acento--90: #24939D;
+    --color--acento--80: #47A4AF;
+    --color--acento--70: #6BB4C0;
+    --color--acento--60: #B3D7E0;
+    --color--acento--50: #E1F7FE;
+    --color--acento--40: #F2FCFF;
+
+
+    /*colores bakcgrounds*/
+    --color--bakcground--naranja: #FFE5CC;
+    --color--bakcground--azul: #E1F7FE;
+    --color--bakcground--verde: #F6FCEF;
+    --color--bakcground--lila: #DEFAF9;
+    --color--bakcground--morado: #B3D7E0;
+  
+
+
+    /*color neutral */
+
+    --color--neutral--100:#111111;
+    --color--neutral--90:#333333;
+    --color--neutral--80:#383B3B;
+    --color--neutral--70:#666666;
+    --color--neutral--60:#7F7F7F;
+    --color--neutral--50:#A4A4A4;
+    --color--neutral--40:#B8B8B8;
+    --color--neutral--30:#CCCCCC;
+    --color--neutral--20:#E0E0E0;
+    --color--neutral--10:#F5F5F5;
+    --color--neutral--0:#FFFFFF;
+
+
+
+    /*colores Feedback*/
+        /*feedback--success*/
+        --color--feedback--success--100:#0D3D1F;
+        --color--feedback--success--90:#166936;
+        --color--feedback--success--80:#0B853D  ;
+        --color--feedback--success--70:#22A152;
+        --color--feedback--success--60:#44BD75;
+        --color--feedback--success--50:#9FE0B8;
+        --color--feedback--success--40:#CEF0DB;
+        --color--feedback--success--30:#F7FAF8;
+
+        /*feedback--error*/
+
+        --color--feedback--error--100:#521A14;
+        --color--feedback--error--90:#7D291F;
+        --color--feedback--error--80:#9E3328;
+        --color--feedback--error--70:#D14434;
+        --color--feedback--error--50:#D14434;
+        --color--feedback--error--60:#EBADA7;
+        --color--feedback--error--40:#F2D8D5;
+        --color--feedback--error--30:#F2D8D5;
+
+
+        /*feedback--warning*/
+
+        --color--feedback--warning--100:#634A1A;
+        --color--feedback--warning--90:#967229;
+        --color--feedback--warning--80:#BF9034;
+        --color--feedback--warning--70:#FCBF44;
+        --color--feedback--warning--60:#FCCE72;
+        --color--feedback--warning--50:#FCE1AC;
+        --color--feedback--warning--40:#FFF2D9;
+        --color--feedback--warning--30:#FFF9EF;
+
+
+        /*info--warning*/
+
+        --color--info--warning--100:#102C5E;
+        --color--info--warning--90:#18428F;
+        --color--info--warning--80:#1F53B5;
+        --color--info--warning--70:#296FF0;
+        --color--info--warning--60:#5C91F2;
+        --color--info--warning--50:#9FBEF5;
+        --color--info--warning--40:#D4E2FA;
+        --color--info--warning--30:#EDF1FA;
+
+    
+
+}
+

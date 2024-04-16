@@ -1,0 +1,188 @@
+@import url("colores.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    /*Fuente*/
+    --font--fuente--principal:'Montserrat';
+    
+    /*weight*/
+    --font--weight--bold:700;
+    --font--weight--semibold:600;
+    --font--weight--medium:500;
+    --font--weight--regular:400;
+    --font--weight--light:300;
+    --font--weight--extralight:200;
+    --font--weight--thin:100;
+
+    /*tamaño desktop*/
+
+    --font--size--h1:48px;
+    --font--size--h2-especial:56px;
+    --font--size--h2:40px;
+    --font--size--h3:24px;
+    --font--size--h4:24px;
+    --font--size--h5:24px;
+    --font--size--h6:24px;
+    --font--size--eyebrown:18px;
+
+    /*tamaño comun*/
+    --font--size--p--L:16px;
+    --font--size--p--M:15px;
+    --font--size--button:16px;
+    --font--size--link:16px;
+    --font--size--label:12px;
+    
+
+
+    /*tracking(letter.spacing) */
+    --font-tracking-title:0.008em;
+    --font-tracking-desktop-p:0.018em;
+    --font-tracking-mobile-p:0.02em;
+    --font-tracking-eyebrow:0.08em;
+    --font-tracking-button:0.022em;
+    --font-tracking-label:0.012em;
+}
+
+/* Cambio de tamaño en celular*/
+
+@media screen and (max-width: 900px) {
+
+  :root{
+    --font--size--h1:24px;
+    --font--size--h2:20px;
+    --font--size--h2-especial:28px;
+    --font--size--h3:18px;
+    --font--size--h4:17px;
+    --font--size--h5:16px;
+    --font--size--h6:16px;
+    --font--size--eyebrown:15px;
+  }
+
+}
+
+ /*Estilo de titulos y font*/
+
+body{
+  font-family: var(--font--fuente--principal),sans-serif;
+}
+
+h1{
+    color:var( --color--neutral--90);
+    font-size: var(--font--size--h1);/*tamaño*/
+    font-weight: var(--font--weight--bold);/*weight*/
+    line-height:120%; /*interlineado*/
+    letter-spacing: var(--font-tracking-title);/*tracking*/
+
+
+}
+
+h2{
+    color:var( --color--neutral--90);
+  font-size: var(--font--size--h2);/*tamaño*/
+  font-weight: var(--font--weight--bold);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-title);/*tracking*/ 
+    
+}
+
+
+h3{
+    color:var( --color--neutral--100);
+  font-size: var(--font--size--h3);/*tamaño*/
+  font-weight: var(--font--weight--semibold);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-title);/*tracking*/
+
+}
+
+
+h4{
+    color:var( --color--neutral--90);
+  font-size: var(--font--size--h4);/*tamaño*/
+  font-weight: var(--font--weight--semibold);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-title);/*tracking*/
+
+}
+h5{
+ color:var( --color--neutral--90);
+  font-size: var(--font--size--h5);/*tamaño*/
+  font-weight: var(--font--weight--bold);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-title);/*tracking*/
+
+}
+h6{
+  font-size: var(--font--size--h6);/*tamaño*/
+  font-weight: var(--font--weight-ssemibold);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-title);/*tracking*/
+
+}
+.eyebrow{
+  font-size: var(--font--size--eyebrown);/*tamaño*/
+  font-weight: var(--font--weight--light);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-eyebrow);/*tracking*/
+}
+
+/*Comun*/
+
+p{
+  font-weight: var(--font--weight--regular);/*weight*/
+  font-size: 16px ;
+}
+
+.p-xl{
+  font-size:var(--font--size--p--XL);
+  line-height: 150%;
+  letter-spacing: var(--font-tracking-desktop-p);/*tracking*/
+}
+.p-l{
+  font-size:var(--font--size--p--L);
+  line-height: 250%;
+  letter-spacing: var(--font-tracking-desktop-p);/*tracking*/
+}
+.p-m{
+  font-size:var(--font--size--p--M);
+  line-height: 120%;
+  letter-spacing: var(--font-tracking-mobile-p);/*tracking*/
+}
+.p-s{
+  font-size:var(--font--size--p--s);
+  line-height: 125%;
+  letter-spacing: var(--font-tracking-mobile-p);/*tracking*/
+}
+
+.button{
+    color: var(--neutral-escala-grises-10, #F5F5F5);
+    text-align: center;
+    /* Comun/Boton */
+    font-family: Sarabun;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 16px */
+    letter-spacing: 0.352px;
+
+}
+.label{
+  font-size: var(--font--size--label);/*tamaño*/
+  font-weight: var(--font--weight--regular);/*weight*/
+  line-height:120%; /*interlineado*/
+  letter-spacing: var(--font-tracking-label);/*tracking*/
+}
+
+.link{
+  font-size: var(--font--size--link);/*tamaño*/
+  font-weight: var(--font--weight--semibold);/*weight*/
+  line-height:100%; /*interlineado*/
+  letter-spacing: var(--font-tracking-button);/*tracking*/
+
+}
+
+
+
+
