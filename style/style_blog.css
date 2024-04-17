@@ -1,0 +1,161 @@
+@import url("../style/colores.css");
+
+/*import de tipografia¨*/
+@import url("../style/tipografia.css");
+
+@import url("../style/botones-style.css");
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+button { padding: 0; background: none; border: none; outline: none; }
+
+
+main{
+    background-image: url("../assets/fondo.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--color--main);
+    opacity: 0.24;
+}
+
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: var(--color--main);
+    padding: 12px !important;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+.header {
+    width: 100%;
+    height: auto;
+}
+
+.header img {
+    width: 99vw;
+}
+
+footer img{
+    width: 98vw;
+}
+
+.Cont-Miga{
+    margin: 48px 5% ;
+}
+
+.Miga li {
+    display: inline;
+}
+.Miga li a{
+display: inline;
+color: black ;
+padding: 0px 3px;
+text-decoration: none;
+padding-right: 3px;
+
+} 
+.Section-banner {
+    margin: 48px 5%;
+
+}
+
+.Section-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.Banner {
+    background-color: var(--color--acento--50);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+.Cont__banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Cont-banner-img {
+    width: 50%;
+}
+
+.Cont__banner-Principal {
+    padding: 0px 48px;
+}
+
+.Cont__banner-Texto {
+    width: 50%;
+    padding: 20px;
+}
+
+.Cont__banner-Texto p {
+    padding: 24px 0px;
+}
+
+.curso-destacado{
+    margin: 110px 0px;
+   }
+   .Container-Curso-destacado{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   .Container-Curso-destacado-seccion{
+       width: 50%;
+   }
+   
+   .Container-Curso-destacado-seccion img{
+       width: 100%;
+   }
+   .Container-Curso-destacado-seccion-textos{
+       padding:80px  120px;
+   }
+
+
+.Cont-Portafolio-Card--Azul {
+    background-color: #E1F7FE;
+}
+
+.Cont-Portafolio-Card--lila {
+    background-color: #F7F1FD;
+}
+
+.Cont-Portafolio-Card--verde {
+    background-color: #F6FCEF;
+}
+
+.Cont-Portafolio-Card--naranja {
+    background-color: #FFE5CC;
+}
