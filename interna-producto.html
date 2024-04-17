@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.2.js"
+        integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" crossorigin="anonymous">
+
+    <link href="./style/style-productos-interno.css" rel="stylesheet" />
+    <link href="./style/normalize.css" rel="stylesheet">
+    <title>Sedes Adulto mayor</title>
+</head>
+
+<body>
+    <header class="header" title="Header">
+        <img src="./assets/img-header.png" alt="Descripción de la imagen">
+    </header>
+    <main class="container-fluid">
+
+        <section title="Miga de pan" class="Cont-Miga">
+            <ul class="Miga">
+                <li>
+                    <a href="/empresas/" target="_blank">
+                        <i class="fa fa-home" style="color: #ff944d !important; font-size: 20px !important;"></i><span
+                            style="color: #ff944d; font-weight: bold;"> Adulto mayor</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-angle-right"></i> Productos Deportes </a>
+                </li>
+
+
+            </ul>
+        </section>
+        <section title="banner" class="Section-banner">
+            <div class="Banner">
+                <div class="Cont__banner Cont__banner-Principal">
+                    <div class="Cont__banner-Texto">
+                        <h2>Actividades para adulto mayor independiente</h2>
+                        <p>Desde asesoramiento médico y programas de ejercicio diseñados para ti, hasta recursos sobre
+                            salud mental y actividades recreativas para mantener tu mente ágil y tu espíritu vibrante,
+                            estamos aquí para brindarte el apoyo que mereces.
+                        </p>
+                    </div>
+                    <div class="Cont-banner-img">
+                        <img src="./assets/img-banner-1.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section title="productos" class="Productos">
+
+            <div class="Cont-Filtro">
+                <h3>Filtro de búsqueda</h3>
+                <input type="text" id="search" placeholder="Buscar...">
+                <select id="sede">
+                    <option value="">Todas las Sedes</option>
+                    <option value="suba">Suba</option>
+                    <option value="Sede68">68</option>
+                    <option value="Cur">Cur</option>
+                </select>
+                <select id="modalidad">
+                    <option value="">Todas franja de horario</option>
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+                <select id="tipo-curso">
+                    <option value="">Todos los Tipos de Curso</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="cursos">Cursos</option>
+                </select>
+            </div>
+        
+
+            <div class="Cont-Productos">
+                <div class="card-container">
+                    <div class="card" data-sede="Cur" data-modalidad="am" data-tipo-curso="deporte">
+                        <div class="card-content">
+                            <img src="./assets/curso-1.png">
+                            <h2>Natación</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+
+                    <div class="card" data-sede="Sede68" data-modalidad="pm" data-tipo-curso="curso">
+                        <div class="card-content">
+                            <img src="./assets/curso-2.png">
+                            <h2>Curso de teclados
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="card" data-sede="suba" data-modalidad="pm" data-tipo-curso="Curso">
+                        <div class="card-content">
+                            <img src="./assets/curso-3.png">
+                            <h2>Curso de excel
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="card" data-sede="Cur" data-modalidad="pm" data-tipo-curso="curso">
+                        <div class="card-content">
+                            <img src="./assets/curso-4.png">
+                            <h2>Curso fotos nube y chat
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="card" data-sede="suba" data-modalidad="am" data-tipo-curso="Curso">
+                        <div class="card-content">
+                            <img src="./assets/curso-5.png">
+                            <h2>Curso gestión correo 
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="card" data-sede="suba" data-modalidad="am" data-tipo-curso="deportes">
+                        <div class="card-content">
+                            <img src="./assets/curso-7.png">
+                            <h2>Curso de guitarra
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                    <div class="card" data-sede="Sede68" data-modalidad="am" data-tipo-curso="deportes">
+                        <div class="card-content">
+                            <img src="./assets/curso-1.png">
+                            <h2>Curso de guitarra
+                                adulto mayor</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <b>Desde $ 74.500</b>
+                            <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span>
+                                    </a>
+                        </div>
+                    </div>
+                   
+
+                    <div class="no-results-message" style="display: none;">No se encontraron resultados.</div>
+
+                 
+                    <!-- Agrega más tarjetas aquí -->
+                </div>
+                <div class="pagination"></div>
+            </div>
+
+           
+
+
+        </section>
+
+        <section class="sedes" class="Info-Sedes">
+            <div class="Cont-sedes">
+                <div class="swiper Sedes">
+                    <div class="swiper-wrapper slide-card-wrapeer">
+                        <div class="swiper-slide slide-card-sedes">
+                            <div class="Card__carrusel__sedes">
+                                <div class="Cont__carrusel  ">
+                                    <img src="./assets/cra-60.png" alt="">
+                                </div>
+                                <div class="Cont__carrusel Cont__carrusel-parrafo-sedes">
+                                    <h3>Cra 60</h3>
+
+                                    <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Conoce
+                                        <span class="fa-solid fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-card-sedes">
+                            <div class="Card__carrusel__sedes">
+                                <div class="Cont__carrusel">
+                                    <img src="./assets/centro-mayor.png" alt="">
+                                </div>
+                                <div class="Cont__carrusel Cont__carrusel-parrafo-sedes">
+                                    <h3>centro-mayor</h3>
+
+                                    <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Conoce
+                                        <span class="fa-solid fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-card-sedes">
+                            <div class="Card__carrusel__sedes">
+                                <div class="Cont__carrusel  ">
+                                    <img src="./assets//fusagasuga.png" alt="">
+                                </div>
+                                <div class="Cont__carrusel Cont__carrusel-parrafo-sedes">
+                                    <h3>Centro permanencia
+                                        Fusagasugá</h3>
+
+                                    <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Conoce
+                                        <span class="fa-solid fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide-card-sedes">
+                            <div class="Card__carrusel__sedes">
+                                <div class="Cont__carrusel  ">
+                                    <img src="./assets/cra-60.png" alt="">
+                                </div>
+                                <div class="Cont__carrusel Cont__carrusel-parrafo-sedes">
+                                    <h3>Cra 60</h3>
+
+                                    <a class="button button--primary button--texto--icono" href="" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Conoce
+                                        <span class="fa-solid fa-chevron-right"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div class="Cont-sedes-texto">
+                    <p class="label">Sedes de atención</p>
+                    <h2>Vive activamente en nuestras sedes</h2>
+                    <p>En estos espacios diseñados con esmero, no solo encontrará instalaciones modernas y confortables,
+                        sino también un equipo dedicado de profesionales que tienen como misión principal brindar el más
+                        alto nivel de atención y apoyo.</p>
+                    <a class="button--third button--texto--icono" href="" target="_blank" rel="noopener noreferrer"
+                        title="Ir a salud">
+                        Conoce más
+                        <span class="fa-solid fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section title="También te pueda interesar " class="Comparten">
+            <div class="Cont-Comparten">
+                <h2>También te pueda interesar </h2>
+
+                <div class="Cont-Comparten-Seccion">
+                    <div class="Cont-Comparten-Seccion-Card">
+                        <img src="./assets/comparten-1.png">
+                        <h3>Inauguración Cra 60</h3>
+                        <a class="button button--primary button--texto--icono" href="" target="_blank"
+                            rel="noopener noreferrer" title="Ir a salud">
+                            Inscríbete aquí <span class="fa-solid fa-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="Cont-Comparten-Seccion-Card">
+                        <img src="./assets/comparten-2.png">
+                        <h3>Celebración día de la mujer</h3>
+                        <a class="button button--primary button--texto--icono" href="" target="_blank"
+                            rel="noopener noreferrer" title="Ir a salud">
+                            Inscríbete aquí <span class="fa-solid fa-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="Cont-Comparten-Seccion-Card">
+                        <img src="./assets/comparten-3.png">
+                        <h3>Festival del adulto mayor</h3>
+                        <a class="button button--primary button--texto--icono" href="" target="_blank"
+                            rel="noopener noreferrer" title="Ir a salud">
+                            Inscríbete aquí <span class="fa-solid fa-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section title="Preguntas frecuentes">
+            <div class="container-desplegable">
+                <h2>Lo que preguntan nuestros usuarios</h2>
+                <div class="containre-fluid Cont-desplegable">
+                    <!--Primero-->
+                    <div class="ContDesplegable" id="butonHorario">
+                        <button type="button" class="ContDesplegable__button  collapsed" id="buton1"
+                            data-toggle="collapse" data-target="#card1" aria-expanded="false" spellcheck="false"
+                            data-gramm="false" onclick="FbotonOn(1)" title="">
+                            <h5 class="ContDesplegable__titulo">¿Tengo servicio de transporte?</h5>
+                            <span id="Icono1" class="false fa-arrow-right fa ContDesplegable__icono"
+                                aria-hidden="true"></span>
+                        </button>
+                        <div id="card1" class="ContDesplegable__area collapse" aria-expanded="false">
+                            <p class="ContDesplegable__parrafo">Ahora puedes vincularte de manera digital a través de la
+                                página web, también con nuestros asesores o en algunas de nuestras oficinas de atención.
+                                Solo necesitas fotocopia de la cédula ampliada al 150%, diligenciar el formato de
+                                vinculación y pagar el primer aporte que corresponde al 1% de 1SMMLV.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ContDesplegable" id="butonHorario">
+                        <button type="button" class="ContDesplegable__button  collapsed" id="buton2"
+                            data-toggle="collapse" data-target="#card2" aria-expanded="false" spellcheck="false"
+                            data-gramm="false" onclick="FbotonOn(2)" title="">
+                            <h5 class="ContDesplegable__titulo">¿Qué costos tienen los servicios ?</h5>
+                            <span id="Icono2" class="false fa-arrow-right fa ContDesplegable__icono"
+                                aria-hidden="true"></span>
+                        </button>
+                        <div id="card2" class="ContDesplegable__area collapse" aria-expanded="false">
+                            <p class="ContDesplegable__parrafo">Ahora puedes vincularte de manera digital a través de la
+                                página web, también con nuestros asesores o en algunas de nuestras oficinas de atención.
+                                Solo necesitas fotocopia de la cédula ampliada al 150%, diligenciar el formato de
+                                vinculación y pagar el primer aporte que corresponde al 1% de 1SMMLV.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ContDesplegable" id="butonHorario">
+                        <button type="button" class="ContDesplegable__button  collapsed" id="buton2"
+                            data-toggle="collapse" data-target="#card3" aria-expanded="false" spellcheck="false"
+                            data-gramm="false" onclick="FbotonOn(3)" title="">
+                            <h5 class="ContDesplegable__titulo">¿Qué costos tienen los servicios ?</h5>
+                            </h5>
+                            <span id="Icono2" class="false fa-arrow-right fa ContDesplegable__icono"
+                                aria-hidden="true"></span>
+                        </button>
+                        <div id="card3" class="ContDesplegable__area collapse" aria-expanded="false">
+                            <p class="ContDesplegable__parrafo">Ahora puedes vincularte de manera digital a través de la
+                                página web, también con nuestros asesores o en algunas de nuestras oficinas de atención.
+                                Solo necesitas fotocopia de la cédula ampliada al 150%, diligenciar el formato de
+                                vinculación y pagar el primer aporte que corresponde al 1% de 1SMMLV.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ContDesplegable" id="butonHorario">
+                        <button type="button" class="ContDesplegable__button  collapsed" id="buton2"
+                            data-toggle="collapse" data-target="#card4" aria-expanded="false" spellcheck="false"
+                            data-gramm="false" onclick="FbotonOn(4)" title="">
+                            <h5 class="ContDesplegable__titulo">¿Cómo puedo ponerme en contacto?</h5>
+                            <span id="Icono2" class="false fa-arrow-right fa ContDesplegable__icono"
+                                aria-hidden="true"></span>
+                        </button>
+                        <div id="card4" class="ContDesplegable__area collapse" aria-expanded="false">
+                            <p class="ContDesplegable__parrafo">Ahora puedes vincularte de manera digital a través de la
+                                página web, también con nuestros asesores o en algunas de nuestras oficinas de atención.
+                                Solo necesitas fotocopia de la cédula ampliada al 150%, diligenciar el formato de
+                                vinculación y pagar el primer aporte que corresponde al 1% de 1SMMLV.
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <img src="./assets/img-footerr.png" alt="Descripción de la imagen">
+    </footer>
+
+</body>
+
+<script type="text/javascript">
+    var swiper3 = new Swiper(".Sedes", {
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        slidesPerView: 3,
+        spaceBetween: 10,
+        autoplay: true,
+        freeMode: true,
+        speed: 1000,
+        rewind: true,
+        breakpoints: {
+            900: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+
+<script type="text/javascript">
+    function FbotonOn(i) {
+        var icono = "Icono" + i;
+        console.log(icono);
+        var ico = "'" + icono + "'"
+        console.log(ico);
+        var uno = document.getElementById(icono);
+        console.log(uno);
+
+        if (uno.className = uno.classList.contains('fa-arrow-down')) {
+            uno.classList.remove('fa-arrow-down')
+            uno.classList.add('fa-arrow-right')
+            uno.classList.add('fa')
+            uno.classList.add('ContDesplegable__icono')
+        }
+        else {
+            uno.classList.remove('fa-arrow-right')
+            uno.classList.add('fa-arrow-down')
+            uno.classList.add('fa')
+            uno.classList.add('ContDesplegable__icono')
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    var cardsPerPage = 6; // Número de tarjetas por página
+    var $cards = $('.card');
+    var cardCount = $cards.length;
+    var pageCount = Math.ceil(cardCount / cardsPerPage);
+    var currentPage = 1;
+
+    
+
+    function showPage(page) {
+        var start = (page - 1) * cardsPerPage;
+        var end = start + cardsPerPage;
+        $cards.hide().slice(start, end).show();
+        $('.pagination a').removeClass('active');
+        $('.pagination a[data-page="' + page + '"]').addClass('active');
+        updateNoResultsMessage();
+    }
+
+    function generatePagination() {
+        var paginationHTML = '';
+        for (var i = 1; i <= pageCount; i++) {
+            paginationHTML += '<a href="#" class="active" data-page="' + i + '">' + i + '</a>';
+        }
+        $('.pagination').html(paginationHTML);
+    }
+
+    function updatePaginationVisibility() {
+        if ($('.card:visible').length > cardsPerPage) {
+            $('.pagination').show();
+        } else {
+            $('.pagination').hide();
+        }
+    }
+
+    function updateNoResultsMessage() {
+        if ($('.card:visible').length === 0) {
+            $('.no-results-message').show();
+        } else {
+            $('.no-results-message').hide();
+        }
+    }
+
+    generatePagination();
+    showPage(currentPage);
+    updateNoResultsMessage();
+   
+
+    $('.pagination').on('click', 'a', function(e) {
+        e.preventDefault();
+        currentPage = parseInt($(this).attr('data-page'), 6);
+        showPage(currentPage);
+    });
+
+    $('#search, #sede, #modalidad, #tipo-curso').on('input change', function() {
+        var searchText = $('#search').val().toLowerCase();
+        var sedeFilter = $('#sede').val();
+        var modalidadFilter = $('#modalidad').val();
+        var tipoCursoFilter = $('#tipo-curso').val();
+        
+        $cards.hide().filter(function() {
+            var cardSede = $(this).data('sede');
+            var cardModalidad = $(this).data('modalidad');
+            var cardTipoCurso = $(this).data('tipo-curso');
+            
+            var sedeMatch = sedeFilter === '' || cardSede === sedeFilter;
+            var modalidadMatch = modalidadFilter === '' || cardModalidad === modalidadFilter;
+            var tipoCursoMatch = tipoCursoFilter === '' || cardTipoCurso === tipoCursoFilter;
+            var textMatch = $(this).text().toLowerCase().indexOf(searchText) !== -1;
+
+            return sedeMatch && modalidadMatch && tipoCursoMatch && textMatch;
+            generatePagination();
+        }).show();
+        updatePaginationVisibility();
+        updateNoResultsMessage();
+        
+    });
+});
+
+</script>
+
+</html>
