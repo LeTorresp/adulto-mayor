@@ -293,7 +293,7 @@ main{
 }
 
 .curso-destacado{
- margin: 120px 0px;
+ margin: 110px 0px;
 }
 .Container-Curso-destacado{
     display: flex;
@@ -308,7 +308,7 @@ main{
     width: 100%;
 }
 .Container-Curso-destacado-seccion-textos{
-    padding: 120px;
+    padding:80px  120px;
     background-color: #D4E2FA ;
     
     

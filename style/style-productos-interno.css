@@ -319,14 +319,22 @@ button:active{
     width: 20%;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:start;
     justify-content: center;
     padding: 48px 16px;
     background-color: #FFE5CC;
-    gap:48px;
+    gap:32px;
     height: auto;
     box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.15);
 
+}
+
+.Cont-Filtro h3{
+    text-align: center;
+}
+
+.Cont-Filtro input, select{
+    width: 100%;
 }
 
 .Cont-Productos{
@@ -341,9 +349,10 @@ button:active{
 .card-container{
     display: flex;
     gap:32px;
-    align-items: center;
-    justify-content: center;
+    align-items:center;
+    justify-content:start;
     flex-wrap: wrap;
+    width: 100%;
 }
 .card{
     width: 30%;
@@ -360,6 +369,11 @@ button:active{
     background-color: white;
     box-shadow: 2px 5px 16px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.8s;
+}
+
+.card-content:hover{
+    transform: scale(1.01);
+    background-color: #FFE5CC;
 }
 
 .card-content img{
@@ -389,4 +403,40 @@ button:active{
 .pagination a.active {
     background-color: #ff6600;
     color: #fff;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.modal-body img{
+width: 100%;
+height: auto;
+}
+
+.Cont-parrafo{
+    display: flex;
+    align-items: flex-start;
+    gap:16px;
+    flex-direction: column;
+}
+
+.Cont-parrafo-sec1{
+    width: 100%;
+    text-align: start;
+}
+
+.Cont-parrafo-sec2{
+    width: 100%;
+    display: flex;
+    align-items:flex-start;
+    justify-content:space-between;
+}
+
+.button-modal{
+    background: var(--gradiants-y-linear-gradiant-boton, linear-gradient(180deg, #F60 0%, #E63F0C 100%)) !important; 
+    color:white !important;
 }

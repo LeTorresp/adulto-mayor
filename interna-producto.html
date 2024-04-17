@@ -36,7 +36,7 @@
         <section title="Miga de pan" class="Cont-Miga">
             <ul class="Miga">
                 <li>
-                    <a href="/empresas/" target="_blank">
+                    <a href="./index.html">
                         <i class="fa fa-home" style="color: #ff944d !important; font-size: 20px !important;"></i><span
                             style="color: #ff944d; font-weight: bold;"> Adulto mayor</span></a>
                 </li>
@@ -68,25 +68,40 @@
 
             <div class="Cont-Filtro">
                 <h3>Filtro de búsqueda</h3>
-                <input type="text" id="search" placeholder="Buscar...">
-                <select id="sede">
-                    <option value="">Todas las Sedes</option>
-                    <option value="suba">Suba</option>
-                    <option value="Sede68">68</option>
-                    <option value="Cur">Cur</option>
-                </select>
-                <select id="modalidad">
-                    <option value="">Todas franja de horario</option>
-                    <option value="am">AM</option>
-                    <option value="pm">PM</option>
-                </select>
-                <select id="tipo-curso">
-                    <option value="">Todos los Tipos de Curso</option>
-                    <option value="deportes">Deportes</option>
-                    <option value="cursos">Cursos</option>
-                </select>
+                <div><label for="search" class="label">Buscar:</label>
+                    <input type="text" id="search" placeholder="Buscar...">
+                </div>
+
+                <div>
+                    <label for="sede" class="label">Sede:</label>
+                    <select id="sede">
+                        <option value="">Todas las Sedes</option>
+                        <option value="suba">Suba</option>
+                        <option value="Sede68">68</option>
+                        <option value="Cur">Cur</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="modalidad" class="label">Modalidad:</label>
+                    <select id="modalidad">
+                        <option value="">Todas franja de horario</option>
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tipo-curso" class="label">Tipo de producto:</label>
+                    <select id="tipo-curso">
+                        <option value="">Todos los Tipos de Curso</option>
+                        <option value="deportes">Deportes</option>
+                        <option value="cursos">Cursos</option>
+                    </select>
+                </div>
+
             </div>
-        
+
 
             <div class="Cont-Productos">
                 <div class="card-container">
@@ -94,13 +109,14 @@
                         <div class="card-content">
                             <img src="./assets/curso-1.png">
                             <h2>Natación</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
-                            <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                            <a class="button button--primary button--texto--icono button-modal" data-toggle="modal" target="_blank"
+                                rel="noopener noreferrer" title="Ir a salud" data-target="#info-01-modal">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
 
@@ -108,14 +124,15 @@
                         <div class="card-content">
                             <img src="./assets/curso-2.png">
                             <h2>Curso de teclados
-                                adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                                adulto</h2>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
                             <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                                rel="noopener noreferrer" title="Ir a salud">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="card" data-sede="suba" data-modalidad="pm" data-tipo-curso="Curso">
@@ -123,13 +140,14 @@
                             <img src="./assets/curso-3.png">
                             <h2>Curso de excel
                                 adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
                             <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                                rel="noopener noreferrer" title="Ir a salud">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="card" data-sede="Cur" data-modalidad="pm" data-tipo-curso="curso">
@@ -137,27 +155,29 @@
                             <img src="./assets/curso-4.png">
                             <h2>Curso fotos nube y chat
                                 adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
                             <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                                rel="noopener noreferrer" title="Ir a salud">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="card" data-sede="suba" data-modalidad="am" data-tipo-curso="Curso">
                         <div class="card-content">
                             <img src="./assets/curso-5.png">
-                            <h2>Curso gestión correo 
+                            <h2>Curso gestión correo
                                 adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
                             <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                                rel="noopener noreferrer" title="Ir a salud">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="card" data-sede="suba" data-modalidad="am" data-tipo-curso="deportes">
@@ -165,40 +185,67 @@
                             <img src="./assets/curso-7.png">
                             <h2>Curso de guitarra
                                 adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
+                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó
+                                la hora de aprender eso que más te gusta.</p>
                             <b>Desde $ 74.500</b>
                             <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
+                                rel="noopener noreferrer" title="Ir a salud">
+                                Lo quiero
+                                <span class="fa-solid fa-cart-shopping"></span>
+                            </a>
                         </div>
                     </div>
-                    <div class="card" data-sede="Sede68" data-modalidad="am" data-tipo-curso="deportes">
-                        <div class="card-content">
-                            <img src="./assets/curso-1.png">
-                            <h2>Curso de guitarra
-                                adulto mayor</h2>
-                            <p>Si eres apasionado por la música y te gusta tocar instrumentos musicales, entonces llegó la hora de aprender eso que más te gusta.</p>
-                            <b>Desde $ 74.500</b>
-                            <a class="button button--primary button--texto--icono" href="" target="_blank"
-                                        rel="noopener noreferrer" title="Ir a salud">
-                                        Lo quiero
-                                        <span class="fa-solid fa-cart-shopping"></span>
-                                    </a>
-                        </div>
-                    </div>
-                   
 
                     <div class="no-results-message" style="display: none;">No se encontraron resultados.</div>
 
-                 
-                    <!-- Agrega más tarjetas aquí -->
+
                 </div>
                 <div class="pagination"></div>
             </div>
 
-           
+
+            <!--Modales -->
+            <div class="modal fade" id="info-01-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                style="display: none;">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title cyr-center-title" id="myModalLabel"></h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="./assets/curso-1-modal.png">
+                            <div class="Cont-parrafo">
+                                <div class="Cont-parrafo-sec1">
+                                    <h2>Natación</h2>
+                                    <p>Conoce y enamórate de la guitarra y de sus técnicas básicas de ejecución en este
+                                        curso, donde aprenderás a realizar ejercicios de coordinación de las dos manos,
+                                        acordes, escalas y ritmos sencillos.</p>
+                                        <b> Desde $ 74.500</b>
+                              
+                                </div>
+
+                                <div class="Cont-parrafo-sec2">
+                                    <a class="button button--third button--texto--icono" href="" target="_blank"
+                                    rel="noopener noreferrer" title="Ir a salud">
+                                    Más información
+                                    <span class="fa-solid fa-chevron-right"></span></a>
+                                    <a class="button button--primary button--texto--icono" href="https://www.tiendacompensar.com/cbi-am%C3%A9ricas/curso-de-natacion-acuactividad/HER-B-RED-DEP-ACU-012" target="_blank"
+                                        rel="noopener noreferrer" title="Ir a salud">
+                                        Lo quiero
+                                        <span class="fa-solid fa-cart-shopping"></span></a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
 
         </section>
@@ -289,7 +336,7 @@
                     <p>En estos espacios diseñados con esmero, no solo encontrará instalaciones modernas y confortables,
                         sino también un equipo dedicado de profesionales que tienen como misión principal brindar el más
                         alto nivel de atención y apoyo.</p>
-                    <a class="button--third button--texto--icono" href="" target="_blank" rel="noopener noreferrer"
+                    <a class="button--third button--texto--icono" href="./sedes.html" target="_blank" rel="noopener noreferrer"
                         title="Ir a salud">
                         Conoce más
                         <span class="fa-solid fa-chevron-right"></span>
@@ -472,83 +519,90 @@
 
 <script type="text/javascript">
 
-$(document).ready(function() {
-    var cardsPerPage = 6; // Número de tarjetas por página
-    var $cards = $('.card');
-    var cardCount = $cards.length;
-    var pageCount = Math.ceil(cardCount / cardsPerPage);
-    var currentPage = 1;
+    $(document).ready(function () {
+        var cardsPerPage = 6; // Número de tarjetas por página
+        var $cards = $('.card');
+        var cardCount = $cards.length;
+        var pageCount = Math.ceil(cardCount / cardsPerPage);
+        var currentPage = 1;
 
-    
-
-    function showPage(page) {
-        var start = (page - 1) * cardsPerPage;
-        var end = start + cardsPerPage;
-        $cards.hide().slice(start, end).show();
-        $('.pagination a').removeClass('active');
-        $('.pagination a[data-page="' + page + '"]').addClass('active');
-        updateNoResultsMessage();
-    }
-
-    function generatePagination() {
-        var paginationHTML = '';
-        for (var i = 1; i <= pageCount; i++) {
-            paginationHTML += '<a href="#" class="active" data-page="' + i + '">' + i + '</a>';
+        function showPage(page) {
+            var start = (page - 1) * cardsPerPage;
+            var end = start + cardsPerPage;
+            $cards.hide().slice(start, end).show();
+            $('.pagination a').removeClass('active');
+            $('.pagination a[data-page="' + page + '"]').addClass('active');
+            updateNoResultsMessage();
         }
-        $('.pagination').html(paginationHTML);
-    }
 
-    function updatePaginationVisibility() {
-        if ($('.card:visible').length > cardsPerPage) {
-            $('.pagination').show();
-        } else {
-            $('.pagination').hide();
+        function generatePagination() {
+            var paginationHTML = '';
+            for (var i = 1; i <= pageCount; i++) {
+                paginationHTML += '<a href="#" data-page="' + i + '">' + i + '</a>';
+            }
+            $('.pagination').html(paginationHTML);
         }
-    }
 
-    function updateNoResultsMessage() {
-        if ($('.card:visible').length === 0) {
-            $('.no-results-message').show();
-        } else {
-            $('.no-results-message').hide();
+        function updatePaginationVisibility() {
+            if ($('.card:visible').length > cardsPerPage) {
+                $('.pagination').show();
+            } else {
+                $('.pagination').hide();
+            }
         }
-    }
 
-    generatePagination();
-    showPage(currentPage);
-    updateNoResultsMessage();
-   
+        function updateNoResultsMessage() {
+            if ($('.card:visible').length === 0 && $('.filter').filter(function () { return $(this).val() !== ""; }).length > 0) {
+                $('.no-results-message').show();
+            } else {
+                $('.no-results-message').hide();
+            }
+        }
 
-    $('.pagination').on('click', 'a', function(e) {
-        e.preventDefault();
-        currentPage = parseInt($(this).attr('data-page'), 6);
-        showPage(currentPage);
-    });
-
-    $('#search, #sede, #modalidad, #tipo-curso').on('input change', function() {
-        var searchText = $('#search').val().toLowerCase();
-        var sedeFilter = $('#sede').val();
-        var modalidadFilter = $('#modalidad').val();
-        var tipoCursoFilter = $('#tipo-curso').val();
-        
-        $cards.hide().filter(function() {
-            var cardSede = $(this).data('sede');
-            var cardModalidad = $(this).data('modalidad');
-            var cardTipoCurso = $(this).data('tipo-curso');
-            
-            var sedeMatch = sedeFilter === '' || cardSede === sedeFilter;
-            var modalidadMatch = modalidadFilter === '' || cardModalidad === modalidadFilter;
-            var tipoCursoMatch = tipoCursoFilter === '' || cardTipoCurso === tipoCursoFilter;
-            var textMatch = $(this).text().toLowerCase().indexOf(searchText) !== -1;
-
-            return sedeMatch && modalidadMatch && tipoCursoMatch && textMatch;
+        function updateUI() {
+            var $visibleCards = $('.card:visible');
+            cardCount = $visibleCards.length;
+            pageCount = Math.ceil(cardCount / cardsPerPage);
             generatePagination();
-        }).show();
+            updatePaginationVisibility();
+            updateNoResultsMessage();
+        }
+
+
+
+
+        generatePagination();
         updatePaginationVisibility();
         updateNoResultsMessage();
-        
+        showPage(currentPage);
+
+        $('.pagination').on('click', 'a', function (e) {
+            e.preventDefault();
+            currentPage = parseInt($(this).attr('data-page'), 10);
+            showPage(currentPage);
+        });
+        $('#search, #sede, #modalidad, #tipo-curso').on('input change', function () {
+            var searchText = $('#search').val().toLowerCase();
+            var sedeFilter = $('#sede').val();
+            var modalidadFilter = $('#modalidad').val();
+            var tipoCursoFilter = $('#tipo-curso').val();
+
+            $cards.hide().filter(function () {
+                var cardSede = $(this).data('sede');
+                var cardModalidad = $(this).data('modalidad');
+                var cardTipoCurso = $(this).data('tipo-curso');
+
+                var sedeMatch = sedeFilter === '' || cardSede === sedeFilter;
+                var modalidadMatch = modalidadFilter === '' || cardModalidad === modalidadFilter;
+                var tipoCursoMatch = tipoCursoFilter === '' || cardTipoCurso === tipoCursoFilter;
+                var textMatch = $(this).text().toLowerCase().indexOf(searchText) !== -1;
+
+                return sedeMatch && modalidadMatch && tipoCursoMatch && textMatch;
+            }).show();
+            updateUI();
+        });
+
     });
-});
 
 </script>
 
