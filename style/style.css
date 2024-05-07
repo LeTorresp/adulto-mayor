@@ -16,7 +16,10 @@
     text-decoration: none;
     list-style-type: none;
 }
-
+.container-fluid{
+    margin: 0px !important;
+    padding: 0px !important;
+}
 main{
     background-image: url("../assets/fondo.png");
     background-repeat: repeat;
@@ -84,8 +87,22 @@ main{
     border-radius: 50% !important;
     width: 40px !important;
     height: 40px !important;
-    top: 70% !important;
+    top: 65% !important;
+    transition: all 0.4s;
 }
+
+.banner-next:hover{
+    transform: scale(1.2);
+    background-color: #ff6600 !important;
+    color: white !important;
+}
+
+.banner-prev:hover{
+    transform: scale(1.2);
+    background-color: #ff6600 !important;
+    color: white !important;
+}
+
 
 .banner-prev:after,
 .banner-next:after {
@@ -171,9 +188,92 @@ main{
 
 
 
+.Portafolio {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 64px;
+}
+
+.Cont-Portafolio-1 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.Cont-Portafolio-2 {
+    width: 95%;
+ 
+}
+
+.portafolio-slide{
+    padding: 10px ;
+}
+
+
+.Cont-Portafolio-Card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: left;
+    justify-content: center;
+    padding: 24px;
+    height: 250px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.Cont-Portafolio-Card-titulo{
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cont-Portafolio-Card img {
+    width: 20%;
+
+}
+.Cont-Portafolio-Card-titulo h3{
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+.Cont-Portafolio-Card-boton {
+    text-align: end !important;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.Cont-Portafolio-Card--Azul {
+    background-color: #E1F7FE;
+}
+
+.Cont-Portafolio-Card--lila {
+    background-color: #F7F1FD;
+}
+
+.Cont-Portafolio-Card--verde {
+    background-color: #F6FCEF;
+}
+
+.Cont-Portafolio-Card--naranja {
+    background-color: #FFE5CC;
+}
+
+
 
 .Cont-Interes {
-    padding-bottom: 120px;
+    padding-top: 120px;
     text-align: center;
     margin: 0px 5%;
 
@@ -224,75 +324,7 @@ main{
 }
 
 
-.Portafolio {
-    display: flex;
-    flex-direction: row;
-    gap: 48px;
-    width: 100%;
-    align-items: center;
 
-    flex-wrap: wrap;
-}
-
-.Cont-Portafolio-1 {
-    width: 20%;
-    margin-left: 5%;
-}
-
-.Cont-Portafolio-2 {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-
-.Cont-Portafolio-Card {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: left;
-    justify-content: center;
-    padding: 24px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transition: all 1s;
-}
-
-.Cont-Portafolio-Card:hover {
-    -webkit-transform: scale(1.01);
-}
-
-.Cont-Portafolio-Card img {
-    width: 20%;
-
-}
-
-.Cont-Portafolio-Card-boton {
-    text-align: end !important;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-
-.Cont-Portafolio-Card--Azul {
-    background-color: #E1F7FE;
-}
-
-.Cont-Portafolio-Card--lila {
-    background-color: #F7F1FD;
-}
-
-.Cont-Portafolio-Card--verde {
-    background-color: #F6FCEF;
-}
-
-.Cont-Portafolio-Card--naranja {
-    background-color: #FFE5CC;
-}
 
 .curso-destacado{
  margin: 110px 0px;
@@ -318,14 +350,17 @@ main{
 }
 
 .Cont-sedes {
-    margin: 0px 5%;
+    width: 100%;
+    background-color: #FFE5CC !important;
+    padding: 48px 5%;
+    margin-top:80px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     gap: 48px;
-
+    
 }
 
 
@@ -349,6 +384,9 @@ main{
     transition: all 0.8s;
 }
 
+.Cont-sedes-texto{
+    width: 30%;
+}
 
 .Card__carrusel__sedes:hover {
     -webkit-transform: scale(1.01);
